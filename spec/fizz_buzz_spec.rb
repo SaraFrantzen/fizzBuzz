@@ -13,4 +13,8 @@ describe 'fizz_buzz' do
     it "returns 'buzz' if number is divisible by 15" do
         expect(fizz_buzz(15)).to eq 'FizzBuzz'
     end
+    it "returns 'You must type a number above 0' if number is smaller than zero" do
+        expect(fizz_buzz(number)).to be > number
+    end
 end
+
